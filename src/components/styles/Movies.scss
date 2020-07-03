@@ -1,0 +1,32 @@
+@import "./Variables.scss";
+
+.movies {
+  h4 {
+    text-align: center;
+    margin-bottom: 3%;
+  }
+  .row {
+    .col {
+        .card-image {
+          display: flex;
+          justify-content: center;
+        }
+      img {
+        max-width: 120px;
+      }
+      figcaption {
+        text-align: center;
+      }
+      .card-content{
+          .card-title {
+            font-size: 110%;
+          }
+        p {
+          .waves-effect {
+            background-color: $third;
+          }
+        }
+      }
+    }
+  }
+}

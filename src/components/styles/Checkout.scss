@@ -1,0 +1,36 @@
+.checkout {
+  text-align: center;
+  &__h4 {
+    margin-top: 5% !important;
+  }
+  &__row {
+    .detail__group {
+      border: 2px black solid;
+    }
+    .price{
+      border: 2px black solid;
+    }
+  }
+  .card-panel {
+    p {
+      text-align: justify;
+    }
+  }
+}
+
+
+@media (max-width: 600px) {  
+  .promotion {
+    .row {
+      .s12 {
+        .material-placeholder {
+          display: flex;
+          justify-content: center;
+          img {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}

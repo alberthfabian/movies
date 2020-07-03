@@ -1,0 +1,21 @@
+@import "./Variables.scss";
+
+.categories {
+  h4 {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .row {
+    .col {
+      text-align: justify;
+    }
+  }
+  .center-align {
+    display: flex;
+    justify-content: space-around;
+    .btn {
+      background-color: $third;
+    }
+  }
+}

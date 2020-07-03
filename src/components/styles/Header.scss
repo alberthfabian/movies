@@ -1,0 +1,25 @@
+@import './Variables.scss';
+
+.container {
+  nav {
+    margin-top: 1%;
+    height: 80px;
+    .nav-wrapper {
+      padding-top: 1%;
+      background-color: $primary;
+      .right {
+        width: 40%;
+        li {
+          width: 30%;
+        }
+      }
+      a {
+        height: 100%;
+        img {
+          height: 88%;
+        }
+        margin-left: 5%;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@import "./Variables.scss";
+
+.footer {
+  background-color: $second !important; 
+}
+
+@media (max-width: 600px) {
+  
+  .footer {
+    .container {
+      text-align: center;
+    }
+  }
+}
