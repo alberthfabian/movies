@@ -9,6 +9,7 @@ const auth = require('./components/auth/network');
 const category = require('./components/category/network');
 const movie = require('./components/movie/network');
 const paymethod = require('./components/paymethod/network');
+const invoice = require('./components/invoice/network');
 const errors = require('../network/errors');
 
 const app = express();
@@ -23,6 +24,7 @@ app.use('/api/auth', auth);
 app.use('/api/category', category);
 app.use('/api/movie', movie);
 app.use('/api/paymethod', paymethod);
+app.use('/api/invoice', invoice);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDoc));
 
 app.use(errors);

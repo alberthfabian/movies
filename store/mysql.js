@@ -71,8 +71,8 @@ function update(table, data) {
     })
 }
 
-function upsert(table, data) {
-    if (data && data.id) {
+function upsert(table, data, isUpd) {
+    if (data && data.id && isUpd) {
         return update(table, data);
     } else {
         return insert(table, data);
