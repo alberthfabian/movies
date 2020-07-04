@@ -1,9 +1,18 @@
 import React from 'react';
 import '../styles/Promotion.scss';
 
+import M from 'materialize-css';
+
 import meBeforeYou from '../../images/me-before-you.png';
 
 class Promotion extends React.Component {
+
+  componentDidMount() {
+    var imag = document.querySelectorAll('.materialboxed');
+    M.Materialbox.init(imag);
+  }
+
+
   render() {
     return (
       <section className="container promotion">

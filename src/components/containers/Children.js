@@ -1,17 +1,28 @@
 import React from 'react';
-import '../styles/Promotion.scss';
+import '../styles/Children.scss';
+
+import M from 'materialize-css';
 
 import theWilloughbys from '../../images/the-willoughbys.png';
 
 class Children extends React.Component {
+
+  componentDidMount() {
+    var imag = document.querySelectorAll('.materialboxed');
+    M.Materialbox.init(imag);
+  }
+
   render() {
     return (
       <section className="container promotion">
       <h4 className="children">Children</h4>
       <div className="row">
         <div className="col s12 m6 l6 xl4">
-          <img className="materialboxed" src={theWilloughbys} alt="Movie" />
-  
+          <img className="materialboxed " src={theWilloughbys} alt="Movie" />
+          <div className="center-align">
+            <a className="waves-effect waves-light btn" href="/home/checkout">Reserve</a>
+          </div>
+
         </div>
         <div className="col s12 m6 l6 xl8 card-panel hoverable">
           <h5>Synopsis</h5>

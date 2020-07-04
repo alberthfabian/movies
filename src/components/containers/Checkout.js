@@ -2,7 +2,16 @@ import React from 'react';
 import '../styles/Checkout.scss';
 import theWilloughbys from '../../images/the-willoughbys.png';
 
+import M from 'materialize-css';
+
 class Checkout extends React.Component {
+
+  componentDidMount() {
+    var imag = document.querySelectorAll('.materialboxed');
+    M.Materialbox.init(imag);
+  }
+
+
   render() {
     return (
       <section className="container checkout">
