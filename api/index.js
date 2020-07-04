@@ -10,6 +10,7 @@ const category = require('./components/category/network');
 const movie = require('./components/movie/network');
 const paymethod = require('./components/paymethod/network');
 const invoice = require('./components/invoice/network');
+const invDetail = require('./components/inv-detail/network');
 const schedule = require('./components/schedule/network');
 const errors = require('../network/errors');
 
@@ -26,6 +27,7 @@ app.use('/api/category', category);
 app.use('/api/movie', movie);
 app.use('/api/paymethod', paymethod);
 app.use('/api/invoice', invoice);
+app.use('/api/inv-detail', invDetail);
 app.use('/api/schedule', schedule);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDoc));
 
