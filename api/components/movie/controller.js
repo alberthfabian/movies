@@ -1,4 +1,4 @@
-const TABLA = 'category';
+const TABLA = 'movie';
 
 module.exports = function (injectedStore) {
     let store = injectedStore;
@@ -10,7 +10,7 @@ module.exports = function (injectedStore) {
         return store.list(TABLA);
     }
 
-    async function upsert(body) {
+    /* async function upsert(body) {
         const category = {
             description: body.description,
         }
@@ -22,10 +22,9 @@ module.exports = function (injectedStore) {
         }
 
         return store.upsert(TABLA, category);
-    }
+    } */
 
     return {
         list,
-        upsert,
     };
 }
